@@ -1,4 +1,4 @@
-
+```python
 def is_prime(number):
     x=2
     while x<number/2+1:
@@ -27,3 +27,4 @@ def main():
         elif menu_inst=='2':
             dec()
 main()
+```
