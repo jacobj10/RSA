@@ -6,6 +6,28 @@ def is_prime(number):
             return 1337
         x+=1
     return 1338
+def pub_enc(x,y):
+    return x*y
+def check_factor(x,y):
+    
+    if x%y==0:
+        return 1338
+    else
+        return 1337
+def check_coprime(x,y):
+    a=list()
+    b=list()
+    z=2
+    while z<x/2+1:
+        if check_factor(x,z)==1338:
+            a.append(z)
+        z+=1
+    z=2
+    while z<x/2+1:
+        if check_factor(y,z)==1338:
+            b.append(z)
+        z+=1
+        
 def enc():
     print "Prime1?"
     prime1=4
@@ -13,6 +35,15 @@ def enc():
         prime1=int(raw_input())
         if is_prime(prime1)==1337:
             print "Please enter a valid prime"
+    prime2=4
+    print "Prime2?"
+    while is_prime(prime2)!=1338:
+        prime2=int(raw_input())
+        if is_prime(prime2)==1337:
+            print "Please enter a valid prime"
+    print "Public key is..."
+    publickey=pub_enc(prime1,prime2)
+    print publickey
 def dec():
     print "Yo"
 def main():
